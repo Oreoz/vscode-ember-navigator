@@ -1,5 +1,4 @@
 const vscode = require('vscode');
-const utilities = require('./utils/file-utilities');
 const QuickPickBuilder = require('./quick-pick-builder');
 
 function activate(context) {
@@ -10,9 +9,9 @@ function activate(context) {
 
     const picks = QuickPickBuilder.buildQuickPicks(fileName);
 
-    vscode.window.showQuickPick(picks).then((selection) => {
-      if (selection && selection.description) {
-        utilities.openFile(selection.description);
+    vscode.window.showQuickPick(picks).then(selection => {
+      if (selection && selection.onClick) {
+        selection.onClick();
       }
     });
   });

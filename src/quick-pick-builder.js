@@ -65,7 +65,8 @@ function buildQuickPicks(fileName = '') {
 
   return destinations.map(destination => ({
     label: titles.get(destination.namespace),
-    description: destination.path
+    description: destination.path,
+    onClick: () => utilities.openFile(destination.path)
   }));
 }
 
