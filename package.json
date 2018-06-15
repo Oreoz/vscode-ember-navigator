@@ -4,6 +4,7 @@
   "description": "",
   "version": "1.0.0",
   "publisher": "oreoz",
+  "repository": "https://github.com/Oreoz/vscode-ember-navigator",
   "engines": {
     "vscode": "^1.24.0"
   },
