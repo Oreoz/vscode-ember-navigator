@@ -11,14 +11,16 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:extension.sayHello"
+    "onLanguage:javascript",
+    "onLanguage:handlebars",
+    "onCommand:extension.openEmberNavigator"
   ],
   "main": "src/extension",
   "contributes": {
     "commands": [
       {
-        "command": "extension.sayHello",
-        "title": "Hello World"
+        "command": "extension.openEmberNavigator",
+        "title": "Ember Navigator"
       }
     ]
   },

@@ -1,13 +1,20 @@
 const vscode = require('vscode');
 const utilities = require('./utils/file-utilities');
+const QuickPickBuilder = require('./quick-pick-builder');
 
 function activate(context) {
   console.log('`vscode-ember-navigator` is now active!');
 
-  const disposable = vscode.commands.registerCommand('extension.sayHello', function () {
+  const disposable = vscode.commands.registerCommand('extension.openEmberNavigator', function () {
     const fileName = vscode.window.activeTextEditor.document.fileName;
 
-    utilities.toggleJavaScriptHandlebars(fileName);
+    const picks = QuickPickBuilder.buildQuickPicks(fileName);
+
+    vscode.window.showQuickPick(picks).then((selection) => {
+      if (selection && selection.description) {
+        utilities.openFile(selection.description);
+      }
+    });
   });
 
   context.subscriptions.push(disposable);

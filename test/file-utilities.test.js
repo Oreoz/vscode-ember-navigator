@@ -13,12 +13,16 @@ const assert = require('assert');
 // const vscode = require('vscode');
 // const myExtension = require('../extension');
 
-// Defines a Mocha test suite to group tests of similar kind together
-suite("Extension Tests", function() {
+const utilities = require('../src/utils/file-utilities');
 
-    // Defines a Mocha unit test
-    test("Something 1", function() {
-        assert.equal(-1, [1, 2, 3].indexOf(5));
-        assert.equal(-1, [1, 2, 3].indexOf(0));
-    });
+// Defines a Mocha test suite to group tests of similar kind together
+suite("File Utilities Tests", function () {
+
+  // Defines a Mocha unit test
+  test("it breaksdown an empty path", function () {
+    const path = '';
+    const result = utilities.breakdown(path);
+
+    assert.deepEqual(result, []);
+  });
 });
