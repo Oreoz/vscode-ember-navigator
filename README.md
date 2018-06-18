@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="images/branding.png">
+  <img src="https://github.com/Oreoz/vscode-ember-navigator/blob/master/images/branding.png?raw=true">
 </p>
 
 The Ember Navigator VS Code extension aims facilitate Ember.js application development by providing shortcuts and contextual navigation via the command palette.
