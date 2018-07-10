@@ -14,19 +14,24 @@
   "activationEvents": [
     "onLanguage:javascript",
     "onLanguage:handlebars",
-    "onCommand:extension.openEmberNavigator",
-    "onCommand:extension.toggleJavaScriptHandlebars"
+    "onCommand:emberNavigator.openEmberNavigator",
+    "onCommand:emberNavigator.toggleJavaScriptHandlebars",
+    "onCommand:emberNavigator.navigateToActiveComponent"
   ],
   "main": "src/extension",
   "contributes": {
     "commands": [
       {
-        "command": "extension.openEmberNavigator",
+        "command": "emberNavigator.openEmberNavigator",
         "title": "Ember Navigator"
       },
       {
-        "command": "extension.toggleJavaScriptHandlebars",
+        "command": "emberNavigator.toggleJavaScriptHandlebars",
         "title": "Ember Navigator: Toggle JavaScript / Handlebars"
+      },
+      {
+        "command": "emberNavigator.navigateToActiveComponent",
+        "title": "Ember Navigator: Navigate to Active Component"
       }
     ]
   },
