@@ -1,5 +1,6 @@
 const vscode = require('vscode');
 const QuickPickBuilder = require('./quick-pick-builder');
+const ToggleJavaScriptHandlebarsCommand = require('./commands/toggle-js-hbs-command');
 
 function activate(context) {
   console.log('`vscode-ember-navigator` is now active!');
@@ -17,10 +18,16 @@ function activate(context) {
   });
 
   context.subscriptions.push(disposable);
+
+  context.subscriptions.push(vscode.commands.registerCommand('extension.toggleJavaScriptHandlebars', function () {
+    new ToggleJavaScriptHandlebarsCommand(vscode.window.activeTextEditor.document.fileName).execute();
+  }));
 }
+
 exports.activate = activate;
 
 // this method is called when your extension is deactivated
 function deactivate() {
 }
+
 exports.deactivate = deactivate;

@@ -14,7 +14,8 @@
   "activationEvents": [
     "onLanguage:javascript",
     "onLanguage:handlebars",
-    "onCommand:extension.openEmberNavigator"
+    "onCommand:extension.openEmberNavigator",
+    "onCommand:extension.toggleJavaScriptHandlebars"
   ],
   "main": "src/extension",
   "contributes": {
@@ -22,6 +23,10 @@
       {
         "command": "extension.openEmberNavigator",
         "title": "Ember Navigator"
+      },
+      {
+        "command": "extension.toggleJavaScriptHandlebars",
+        "title": "Ember Navigator: Toggle JavaScript / Handlebars"
       }
     ]
   },
