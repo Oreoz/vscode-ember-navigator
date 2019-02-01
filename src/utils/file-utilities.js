@@ -19,7 +19,7 @@ function openFile(destination = '') {
 exports.openFile = openFile;
 
 function breakdown(path = '') {
-  let pattern = /^(.*)\\(app|addon|tests)\\([a-z0-9-]+)\\.*?(components)?(.*?)([a-z0-9-]*)[.]([a-z]*)$/;
+  let pattern = /^(.*)[\\\/](app|addon|tests)[\\\/]([a-z0-9-]+)[\\\/].*?(components)?(.*?)([a-z0-9-]*)[.]([a-z]*)$/;
   let matches = pattern.exec(path);
 
   return matches ?
