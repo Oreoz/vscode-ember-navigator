@@ -9,6 +9,15 @@ The Ember Navigator VS Code extension aims facilitate Ember.js application devel
 ### Command Palette Contextual Navigation
 ![Command Palette Contextual Navigation](images/ember-navigator-contextual-navigations.gif)
 
+### Shortcuts
+
+Command | Shortcut | Mac Shortcut
+--- | --- | ---
+`emberNavigator.navigateTemplate` | CTRL + ALT + E | SHIFT + CMD + E
+`emberNavigator.navigateRoute` | CTRL + ALT + R | SHIFT + CMD + R
+`emberNavigator.navigateTest` | CTRL + ALT + T | SHIFT + CMD + T
+`emberNavigator.navigateToActiveComponent` | CTRL + ALT + [Enter] | SHIFT + CMD + [Enter]
+
 ## Release Notes
 
 ### 1.0.0
