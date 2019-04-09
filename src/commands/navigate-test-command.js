@@ -1,4 +1,4 @@
-const NavigateTo = require('../utils/navigate-to');
+const NavigateTo = require('./navigate-to');
 
 class NavigateTestCommand extends NavigateTo {
   execute() {

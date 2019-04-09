@@ -1,4 +1,4 @@
-const utilities = require('./file-utilities');
+const utilities = require('../utils/file-utilities');
 
 class NavigateToCommand {
     constructor(location) {

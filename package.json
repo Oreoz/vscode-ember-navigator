@@ -47,8 +47,8 @@
     "keybindings": [
       {
         "command": "emberNavigator.openEmberNavigator",
-        "key": "ctrl+[Enter]",
-        "mac": "cmd+[Enter]",
+        "key": "ctrl+alt+i",
+        "mac": "cmd+alt+i",
         "when": "editorTextFocus"
       },
       {

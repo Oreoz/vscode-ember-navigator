@@ -17,6 +17,7 @@ Command | Shortcut | Mac Shortcut
 `emberNavigator.navigateRoute` | CTRL + ALT + R | SHIFT + CMD + R
 `emberNavigator.navigateTest` | CTRL + ALT + T | SHIFT + CMD + T
 `emberNavigator.navigateToActiveComponent` | CTRL + ALT + [Enter] | SHIFT + CMD + [Enter]
+`emberNavigator.openEmberNavigator` | CTRL + ALT + I | SHIFT + CMD + I
 
 ## Release Notes
 
