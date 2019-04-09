@@ -2,7 +2,7 @@
   "name": "vscode-ember-navigator",
   "displayName": "Ember Navigator",
   "description": "A productivity tool for Ember.js developers.",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "publisher": "oreoz",
   "repository": "https://github.com/Oreoz/vscode-ember-navigator",
   "engines": {
@@ -15,7 +15,9 @@
     "onLanguage:javascript",
     "onLanguage:handlebars",
     "onCommand:emberNavigator.openEmberNavigator",
-    "onCommand:emberNavigator.toggleJavaScriptHandlebars",
+    "onCommand:emberNavigator.navigateTemplate",
+    "onCommand:emberNavigator.navigateRoute",
+    "onCommand:emberNavigator.navigateTest",
     "onCommand:emberNavigator.navigateToActiveComponent"
   ],
   "main": "src/extension",
@@ -26,12 +28,52 @@
         "title": "Ember Navigator"
       },
       {
-        "command": "emberNavigator.toggleJavaScriptHandlebars",
-        "title": "Ember Navigator: Toggle JavaScript / Handlebars"
+        "command": "emberNavigator.navigateTemplate",
+        "title": "Ember Navigator: Navigate between file and related template"
       },
       {
         "command": "emberNavigator.navigateToActiveComponent",
         "title": "Ember Navigator: Navigate to Active Component"
+      },
+      {
+        "command": "emberNavigator.navigateRoute",
+        "title": "Ember Navigator: Navigate between file and related route"
+      },
+      {
+        "command": "emberNavigator.navigateTest",
+        "title": "Ember Navigator: Navigate between file and related test"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "emberNavigator.openEmberNavigator",
+        "key": "ctrl+alt+i",
+        "mac": "cmd+alt+i",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "emberNavigator.navigateTemplate",
+        "key": "ctrl+alt+e",
+        "mac": "shift+cmd+e",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "emberNavigator.navigateRoute",
+        "key": "ctrl+alt+r",
+        "mac": "shift+cmd+r",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "emberNavigator.navigateTest",
+        "key": "ctrl+alt+t",
+        "mac": "shift+cmd+t",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "emberNavigator.navigateToActiveComponent",
+        "key": "ctrl+alt+[Enter]",
+        "mac": "shift+cmd+[Enter]",
+        "when": "editorTextFocus"
       }
     ]
   },

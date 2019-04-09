@@ -15,3 +15,12 @@ All notable changes to the "vscode-ember-navigator" extension will be documented
 
 ### Modified
 - The command prefix for the extension, previously `extension` has been changed to `emberNavigator`.
+
+## [1.3.0] - 2019-04-09
+### Added
+- Command that enables navigation from a file to it's related route and vice-versa
+- Command that enables navigation from a file to it's related test and vice-versa
+- Added shortcuts to the different commands
+
+### Modified
+- Renamed toggle### commands to Navigate### commands
