@@ -1,7 +1,7 @@
 const NavigateTo = require('../utils/navigate-to');
 
-class ToggleRouteControllerCommand extends NavigateTo {
-  execute(){
+class NavigateRouteCommand extends NavigateTo {
+  execute() {
     this.namespaces = new Map([
       ['controllers', ['routes']],
       ['templates', ['routes']],
@@ -12,5 +12,4 @@ class ToggleRouteControllerCommand extends NavigateTo {
   }
 }
 
-module.exports = ToggleRouteControllerCommand;
-
+module.exports = NavigateRouteCommand;

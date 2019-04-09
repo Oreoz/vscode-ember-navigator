@@ -9,9 +9,7 @@ class NavigateToCommand {
     execute() {
       const { namespace } = utilities.breakdown(this.location) || { namespace: '' };
   
-      const namespaces = this.namespaces;
-  
-      const acceptedNamespaces = namespaces.get(namespace);
+      const acceptedNamespaces = this.namespaces.get(namespace);
   
       let destination = utilities.getPossibleDestinations(this.location)
         .filter(destination => acceptedNamespaces.indexOf(destination.namespace) !== -1)[0];

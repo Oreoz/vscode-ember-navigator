@@ -1,6 +1,6 @@
 const NavigateTo = require('../utils/navigate-to');
 
-class ToggleJavaScriptHandlebarsCommand extends NavigateTo {
+class NavigateTemplateCommand extends NavigateTo {
   execute() {
     this.namespaces = new Map([
       ['controllers', ['templates']],
@@ -13,4 +13,4 @@ class ToggleJavaScriptHandlebarsCommand extends NavigateTo {
   }
 }
 
-module.exports = ToggleJavaScriptHandlebarsCommand;
+module.exports = NavigateTemplateCommand;

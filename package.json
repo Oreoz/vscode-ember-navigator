@@ -15,7 +15,9 @@
     "onLanguage:javascript",
     "onLanguage:handlebars",
     "onCommand:emberNavigator.openEmberNavigator",
-    "onCommand:emberNavigator.toggleJavaScriptHandlebars",
+    "onCommand:emberNavigator.navigateTemplate",
+    "onCommand:emberNavigator.navigateRoute",
+    "onCommand:emberNavigator.navigateTest",
     "onCommand:emberNavigator.navigateToActiveComponent"
   ],
   "main": "src/extension",
@@ -26,17 +28,21 @@
         "title": "Ember Navigator"
       },
       {
-        "command": "emberNavigator.toggleJavaScriptHandlebars",
-        "title": "Ember Navigator: Toggle JavaScript / Handlebars"
+        "command": "emberNavigator.navigateTemplate",
+        "title": "Ember Navigator: Navigate between file and related template"
       },
       {
         "command": "emberNavigator.navigateToActiveComponent",
         "title": "Ember Navigator: Navigate to Active Component"
       },
       {
-        "command": "emberNavigator.toggleRouteController",
-        "title": "Ember Navigator: Toggle Route / Controller"
+        "command": "emberNavigator.navigateRoute",
+        "title": "Ember Navigator: Navigate between file and related route"
       },
+      {
+        "command": "emberNavigator.navigateTest",
+        "title": "Ember Navigator: Navigate between file and related test"
+      }
     ],
     "keybindings": [
       {
@@ -46,15 +52,21 @@
         "when": "editorTextFocus"
       },
       {
-        "command": "emberNavigator.toggleJavaScriptHandlebars",
+        "command": "emberNavigator.navigateTemplate",
         "key": "ctrl+alt+e",
         "mac": "shift+cmd+e",
         "when": "editorTextFocus"
       },
       {
-        "command": "emberNavigator.toggleRouteController",
+        "command": "emberNavigator.navigateRoute",
         "key": "ctrl+alt+r",
         "mac": "shift+cmd+r",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "emberNavigator.navigateTest",
+        "key": "ctrl+alt+t",
+        "mac": "shift+cmd+t",
         "when": "editorTextFocus"
       },
       {
