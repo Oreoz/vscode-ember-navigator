@@ -71,8 +71,8 @@
       },
       {
         "command": "emberNavigator.navigateToActiveComponent",
-        "key": "ctrl+alt+[Enter]",
-        "mac": "shift+cmd+[Enter]",
+        "key": "ctrl+alt+Enter",
+        "mac": "shift+cmd+Enter",
         "when": "editorTextFocus"
       }
     ]
