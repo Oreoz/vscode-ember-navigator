@@ -15,8 +15,13 @@ The Ember Navigator VS Code extension aims facilitate Ember.js application devel
 - Initial release of Ember Navigator!
 
 ### 1.1.0
-- Adds a command (`emberNavigator.toggleJavaScriptHandlebars`) that lets the user toggle in between their JavaScript components and controllers to their linked Handlebars templates.
+- Adds a command (`emberNavigator.navigateTemplate`) that lets the user toggle in between their JavaScript components and controllers to their linked Handlebars templates.
 
 ### 1.2.0
 - Adds a command (`emberNavigator.navigateToActiveComponent`) that enables navigation to a component on the editor's active line.
 - Changes the command prefix from the generic 'extension' to 'emberNavigator'.
+
+### 1.3.0
+- Adds a command (`emberNavigator.navigateRoute`) that enables navigation to and from a route.
+- Adds a command (`emberNavigator.navigateTest`) that enables navigation to and from a test.
+- Renamed command (`emberNavigator.toggleJavascriptHandlebars`) to (`emberNavigator.navigateTemplate`) for naming consistency.
