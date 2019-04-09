@@ -32,6 +32,36 @@
       {
         "command": "emberNavigator.navigateToActiveComponent",
         "title": "Ember Navigator: Navigate to Active Component"
+      },
+      {
+        "command": "emberNavigator.toggleRouteController",
+        "title": "Ember Navigator: Toggle Route / Controller"
+      },
+    ],
+    "keybindings": [
+      {
+        "command": "emberNavigator.openEmberNavigator",
+        "key": "ctrl+[Enter]",
+        "mac": "cmd+[Enter]",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "emberNavigator.toggleJavaScriptHandlebars",
+        "key": "ctrl+alt+e",
+        "mac": "shift+cmd+e",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "emberNavigator.toggleRouteController",
+        "key": "ctrl+alt+r",
+        "mac": "shift+cmd+r",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "emberNavigator.navigateToActiveComponent",
+        "key": "ctrl+alt+[Enter]",
+        "mac": "shift+cmd+[Enter]",
+        "when": "editorTextFocus"
       }
     ]
   },

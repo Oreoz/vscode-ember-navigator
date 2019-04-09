@@ -1,6 +1,7 @@
 const vscode = require('vscode');
 const QuickPickBuilder = require('./quick-pick-builder');
 const ToggleJavaScriptHandlebarsCommand = require('./commands/toggle-js-hbs-command');
+const ToggleRouteControllerCommand = require('./commands/toggle-route-controller-command');
 const NavigateToActiveComponentCommand = require('./commands/navigate-active-component-command');
 
 function activate(context) {
@@ -24,6 +25,9 @@ function activate(context) {
     new ToggleJavaScriptHandlebarsCommand(vscode.window.activeTextEditor.document.fileName).execute();
   }));
 
+  context.subscriptions.push(vscode.commands.registerCommand('emberNavigator.toggleRouteController', function () {
+    new ToggleRouteControllerCommand(vscode.window.activeTextEditor.document.fileName).execute();
+  }));
   context.subscriptions.push(vscode.commands.registerCommand('emberNavigator.navigateToActiveComponent', function () {
     new NavigateToActiveComponentCommand(vscode.window.activeTextEditor).execute();
   }));

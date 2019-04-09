@@ -1,26 +1,15 @@
-const utilities = require('../utils/file-utilities');
+const NavigateTo = require('../utils/navigate-to');
 
-class ToggleJavaScriptHandlebarsCommand {
-  constructor(location) {
-    this.location = location;
-  }
-
+class ToggleJavaScriptHandlebarsCommand extends NavigateTo {
   execute() {
-    const { namespace } = utilities.breakdown(this.location) || { namespace: '' };
-
-    const namespaces = new Map([
+    this.namespaces = new Map([
       ['controllers', ['templates']],
       ['components', ['templates']],
       ['templates', ['controllers', 'components']],
+      ['routes', ['templates']]
     ]);
 
-    const acceptedNamespaces = namespaces.get(namespace);
-
-    const { path } = utilities
-      .getPossibleDestinations(this.location)
-      .filter(destination => acceptedNamespaces.indexOf(destination.namespace) !== -1)[0];
-
-    utilities.openFile(path);
+    super.execute();
   }
 }
 
