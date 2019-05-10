@@ -16,13 +16,14 @@ const assert = require('assert');
 const utilities = require('../src/utils/file-utilities');
 
 // Defines a Mocha test suite to group tests of similar kind together
-suite("File Utilities Tests", function () {
+suite('Utils: File', function () {
 
   // Defines a Mocha unit test
-  test("it breaksdown an empty path", function () {
+  test('it breaksdown an empty path', function () {
     const path = '';
     const result = utilities.breakdown(path);
 
     assert.deepEqual(result, []);
   });
+
 });
