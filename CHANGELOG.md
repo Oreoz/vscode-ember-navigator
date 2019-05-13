@@ -24,3 +24,6 @@ All notable changes to the "vscode-ember-navigator" extension will be documented
 
 ### Modified
 - Renamed toggle### commands to Navigate### commands
+
+## [2.0.0] - 2019-05-13
+- Adds Octane component syntax support.

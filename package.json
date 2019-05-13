@@ -2,7 +2,7 @@
   "name": "vscode-ember-navigator",
   "displayName": "Ember Navigator",
   "description": "A productivity tool for Ember.js developers.",
-  "version": "1.3.0",
+  "version": "2.0.0",
   "publisher": "oreoz",
   "repository": "https://github.com/Oreoz/vscode-ember-navigator",
   "engines": {

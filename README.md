@@ -35,3 +35,6 @@ Command | Shortcut | Mac Shortcut
 - Adds a command (`emberNavigator.navigateRoute`) that enables navigation to and from a route.
 - Adds a command (`emberNavigator.navigateTest`) that enables navigation to and from a test.
 - Renamed command (`emberNavigator.toggleJavascriptHandlebars`) to (`emberNavigator.navigateTemplate`) for naming consistency.
+
+### 2.0.0
+- Adds Octane component syntax support.
