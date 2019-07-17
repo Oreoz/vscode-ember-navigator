@@ -83,7 +83,7 @@
   },
   "devDependencies": {
     "@types/mocha": "^5.2.7",
-    "@types/node": "^12.6.2",
+    "@types/node": "^12.6.6",
     "eslint": "^6.0.1",
     "sinon": "^7.3.2",
     "typescript": "^3.5.2",
