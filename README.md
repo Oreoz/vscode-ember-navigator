@@ -4,6 +4,8 @@
 
 The Ember Navigator VS Code extension aims facilitate Ember.js application development by providing shortcuts and contextual navigation via the command palette.
 
+__Currently not looking to add features to this addon, I'm simply keeping it safe and healthy with the help of Dependabot.__
+
 ## Features
 
 ### Command Palette Contextual Navigation
